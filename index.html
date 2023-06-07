@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kanban</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <h1>Kanban</h1>
+    <form id="add-task-form">
+      <p>Create a new task:</p>
+      <input type="text" placeholder="Enter the title..." />
+      <button type="submit">Create</button>
+    </form>
+    <div class="kanban">
+      <div class="column">
+        <h2>To do</h2>
+        <ul class="tasks" id="todo">
+          <li draggable="true">Task 1</li>
+          <li draggable="true">Task 2</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>Doing</h2>
+        <ul class="tasks" id="doing">
+          <li draggable="true">Task 3</li>
+          <li draggable="true">Task 4</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2>Done</h2>
+        <ul class="tasks" id="done">
+          <li draggable="true">Task 5</li>
+          <li draggable="true">Task 6</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
